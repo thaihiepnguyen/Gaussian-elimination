@@ -1,8 +1,8 @@
-# Gaussian CLI
+# Gaussian Elimination CLI
 
 - Made with Python
 - Support better for MacOS/Linux Environment
-- This is the Project of **Applied Mathematics and Statistics** Subject
+- This is the Project of **Toán Ứng Dụng và Thống Kê** Subject
 - The application helps us solve the linear equation
 - Scores: ? :)
 
