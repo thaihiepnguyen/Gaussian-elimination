@@ -1,12 +1,13 @@
 import math
 import os
-
+from fractions import Fraction
 
 def Gauss_elimination(matrix):
     """
         Returns a Echelon matrix
     """
     # to do not change the parameter
+
     result = []
     for line in matrix:
         array = []
@@ -16,6 +17,12 @@ def Gauss_elimination(matrix):
 
     row = len(result)
     col = len(result[0])
+
+    # to fraction
+
+    for i in range(0, row, 1):
+        for j in range(0, col, 1):
+            result[i][j] = Fraction(result[i][j])
 
     for i in range(0, row, 1):
         # find the pivot index
@@ -44,7 +51,7 @@ def Gauss_elimination(matrix):
 
         # if pivot is not leader
         if result[i][pivot] != 1:
-            result[i] = [item / result[i][pivot] for item in result[i]]
+            result[i] = [item * (1 / result[i][pivot]) for item in result[i]]
 
         for j in range(i + 1, row, 1):
             temp = result[j][pivot]
