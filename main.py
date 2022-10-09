@@ -2,6 +2,7 @@ import math
 import os
 from fractions import Fraction
 
+
 def Gauss_elimination(matrix):
     """
         Returns a Echelon matrix
@@ -147,6 +148,7 @@ def solve(matrix):
 
 if __name__ == '__main__':
     while True:
+        print("GAUSSIAN ELIMINATION")
         print("row of your matrix? ")
         try:
             row = int(input("> "))
