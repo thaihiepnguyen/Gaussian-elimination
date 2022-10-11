@@ -5,7 +5,7 @@ from fractions import Fraction
 
 def Gauss_elimination(matrix):
     """
-        Returns a Echelon matrix
+        Returns an Echelon matrix
     """
     # to do not change the parameter
 
