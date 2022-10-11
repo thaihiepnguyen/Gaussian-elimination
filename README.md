@@ -35,4 +35,4 @@
 - Example 3
   ![example](./overview/example3.png)
 
-Auther: Nguyễn Thái Hiệp
+Author: Nguyễn Thái Hiệp
